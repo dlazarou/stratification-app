@@ -36,6 +36,14 @@ python script.py
 
 At which point you should have a window pop up and be able to interact with it.
 
+If starting getting errors of "not finding cbc" then:
+```
+brew tap coin-or-tools/coinor
+brew install cbc
+```
+for MacOS.
+
+
 Releasing
 ---------
 
