@@ -888,7 +888,8 @@ def find_random_sample(categories: Dict[str, Dict[str, Dict[str, int]]], people:
         raise ValueError(f"Unknown selection algorithm {repr(selection_algorithm)}.")
 
     assert len(set(committees)) == len(committees)
-    #_output_panel_table(committees, probabilities)
+    #write panel output:
+    _output_panel_table(committees, probabilities)
     output_lines += new_output_lines
     output_lines += _distribution_stats(people, committees, probabilities)
 
