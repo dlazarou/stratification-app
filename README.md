@@ -36,7 +36,10 @@ python script.py
 
 At which point you should have a window pop up and be able to interact with it.
 
-If starting getting errors of "not finding cbc" then:
+For subsequent runs just omit the first line above.
+For playing around with parameters just edit the sf_stratification_settings.toml which is located in the user folder (MacOS)
+
+If you are starting getting errors of "not finding cbc" then:
 ```
 brew tap coin-or-tools/coinor
 brew install cbc
@@ -66,3 +69,10 @@ pip install pypiwin32
 ```
 
 This should be done by `pipenv install` but I may have got the syntax wrong.
+
+Errors during runtime:
+----------------------
+"Inconsistent numbers in min and max in the categories input: the sum of the minimum values of a category is larger than the sum of the maximum values of a(nother) category.",
+can be fixed by carefully selecting the min/max numbers.
+
+"no error" but button doesn't become blue: check the existence of a unique id column.
